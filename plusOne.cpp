@@ -33,7 +33,6 @@ int main()
 std::vector<int> plusOne( std::vector<int>& digits )
 {
     int tail = digits.size() - 1;
-    int addIndex{tail};
 
     if ( digits[tail] == 9 ) {
         while( tail >= 0 ) {
