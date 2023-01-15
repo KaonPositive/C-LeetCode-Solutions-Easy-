@@ -39,8 +39,7 @@ std::vector<int> plusOne( std::vector<int>& digits )
             if ( digits[tail] == 9 ) {
                 // if reached at the front of vector
                 if ( tail == 0 ) {
-                    // expands vector--inserts 0 at the end of vector
-                    digits.resize( digits.size() + 1 );
+                    digits.push_back( 0 );
                     // 0 is set to have leading num be incremented after breaking out of the loop
                     digits[0] = 0;
                 }
